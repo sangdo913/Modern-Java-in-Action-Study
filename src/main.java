@@ -79,6 +79,10 @@ public class main {
 
         //===========Quiz 2-1
         new QUIZ2(list);
+
+        System.out.println("Chapter3 test");
+        var chapter3 = new Chapter3();
+        chapter3.all_execute();
     }
 
     public static List<Apple> filterGreenApples(List<Apple> inventory) {
