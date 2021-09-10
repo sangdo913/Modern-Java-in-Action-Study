@@ -61,7 +61,6 @@ public class Chapter3 {
         } catch(IOException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     public static void process(Runnable r) {

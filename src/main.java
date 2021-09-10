@@ -44,45 +44,46 @@ class PrintApple {
 
 public class main {
     public static void main(String[] args) {
-        ArrayList<Apple> list = new ArrayList();
-        int cnt = 0;
-        list.add(new Apple(cnt++, Color.RED, 150));
-        list.add(new Apple(cnt++, Color.GREEN, 180));
-        list.add(new Apple(cnt++, Color.RED,78));
-        list.add(new Apple(cnt++, Color.RED, 234));
-        list.add(new Apple(cnt++, Color.GREEN, 1235));
-
-        List<Apple> res = filterGreenApples(list);
-
-        System.out.println("print apple list");
-        for (Apple apple: res) {
-            System.out.println("(" + apple.getNumber() + ", " + apple.getColor() +  ") ");
-        }
-
-        System.out.println("===\n");
-        System.out.println("print filtered apples list by Color");
-        res =  filterApplesByColor(list, Color.RED);
-        for (Apple apple: res) {
-            System.out.println("(" + apple.getNumber() + ", " + apple.getColor() +  ") ");
-        }
-
-        System.out.println("===");
-        System.out.println("print filtered apples list by Weight");
-        res =  filterApplesByWeight(list, 150);
-        for (Apple apple: res) {
-            System.out.println("(" + apple.getNumber() + ", " + apple.getColor() + ", " + apple.getWeight() +  ") ");
-        }
-        //==========위에까지가 1
-        var c = new ModernJavaInAction2_2(list);
-        c.func2_4_1(list);
-        c.func2_4_2();
-
-        //===========Quiz 2-1
-        new QUIZ2(list);
-
-        System.out.println("Chapter3 test");
-        var chapter3 = new Chapter3();
-        chapter3.all_execute();
+        new Chapter5().go();
+//        ArrayList<Apple> list = new ArrayList();
+//        int cnt = 0;
+//        list.add(new Apple(cnt++, Color.RED, 150));
+//        list.add(new Apple(cnt++, Color.GREEN, 180));
+//        list.add(new Apple(cnt++, Color.RED,78));
+//        list.add(new Apple(cnt++, Color.RED, 234));
+//        list.add(new Apple(cnt++, Color.GREEN, 1235));
+//
+//        List<Apple> res = filterGreenApples(list);
+//
+//        System.out.println("print apple list");
+//        for (Apple apple: res) {
+//            System.out.println("(" + apple.getNumber() + ", " + apple.getColor() +  ") ");
+//        }
+//
+//        System.out.println("===\n");
+//        System.out.println("print filtered apples list by Color");
+//        res =  filterApplesByColor(list, Color.RED);
+//        for (Apple apple: res) {
+//            System.out.println("(" + apple.getNumber() + ", " + apple.getColor() +  ") ");
+//        }
+//
+//        System.out.println("===");
+//        System.out.println("print filtered apples list by Weight");
+//        res =  filterApplesByWeight(list, 150);
+//        for (Apple apple: res) {
+//            System.out.println("(" + apple.getNumber() + ", " + apple.getColor() + ", " + apple.getWeight() +  ") ");
+//        }
+//        //==========위에까지가 1
+//        var c = new ModernJavaInAction2_2(list);
+//        c.func2_4_1(list);
+//        c.func2_4_2();
+//
+//        //===========Quiz 2-1
+//        new QUIZ2(list);
+//
+//        System.out.println("Chapter3 test");
+//        var chapter3 = new Chapter3();
+//        chapter3.all_execute();
     }
 
     public static List<Apple> filterGreenApples(List<Apple> inventory) {
